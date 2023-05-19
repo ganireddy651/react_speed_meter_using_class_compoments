@@ -26,18 +26,17 @@ class Speedometer extends Component {
 
   render() {
     const {speed} = this.state
+    console.log(speed)
     return (
       <div className="speed_meter_bg_container">
-        <h1 className="main-heading">Speed Meter</h1>
+        <h1 className="main-heading">SSPEEDOMETER</h1>
         <div className="image-container">
           <img
             className="speed-meter-image"
             src="https://assets.ccbp.in/frontend/react-js/speedometer-img.png "
             alt="speedometer"
           />
-          <h1 className="heading">
-            Speed is <span>{speed}</span>mph
-          </h1>
+          <h1 className="heading">Speed is {speed}mph</h1>
           <p className="para">Min limit is 0mph, Max limit is 200mph</p>
           <div className="button-container">
             <button
